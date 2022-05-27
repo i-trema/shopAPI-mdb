@@ -1,0 +1,41 @@
+### création article
+POST http://localhost:3001/articles/article
+Content-Type: application/json
+
+{
+  "titre": "RME Babyface",
+  "description": "interface audio",
+  "prix" : 450,
+  "disponibilite": true
+}
+
+### création article 2
+POST http://localhost:3001/articles/article
+Content-Type: application/json
+
+{
+  "titre": "Samsung EVO 250",
+  "description": "disque dur SSD 250Go",
+  "prix": 200,
+  "disponibilite": true
+}
+
+### lister articles
+GET http://localhost:3001/articles/
+
+### modifier un article
+PATCH http://localhost:3001/articles/6290a4accac88a8d16c16f1e
+Content-Type: application/json
+
+{
+  "titre": "Samsung EVO 250",
+  "description": "disque dur SSD 250Go",
+  "prix": 220,
+  "disponibilite": false
+}
+
+### supprimer un article
+DELETE http://localhost:3001/articles/6290a1dfc89644e62a7e17a4
+
+### afficher un article
+GET http://localhost:3001/articles/6290a4accac88a8d16c16f1e
