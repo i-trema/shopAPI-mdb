@@ -30,7 +30,7 @@ Content-Type: application/json
 {
   "titre": "Samsung EVO 250",
   "description": "disque dur SSD 250Go",
-  "prix": 220,
+  "prix": 225,
   "disponibilite": false
 }
 

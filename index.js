@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const articleRouter = require("./routes/articleRoute.js");
+const articleRoute = require("./routes/articleRoute.js");
 // const cors = require("cors");
 
 const app = express();
@@ -16,7 +16,7 @@ app.use(express.json());
 // app.use(express.urlencoded({ extended: true }))
 // app.use(bodyParser.json())
 
-app.use("/articles", articleRouter);
+app.use("/articles", articleRoute);
 
 // lancer le serveur sur le port 3001
 app.listen(3001, () => console.log("Le server ecoute sur le port : 3001"));
